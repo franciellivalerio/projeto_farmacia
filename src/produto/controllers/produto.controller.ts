@@ -4,7 +4,7 @@ import { Produto } from '../entities/produto.entity';
 
 @Controller('produtos')
 export class ProdutoController {
-    constructor(private produtoService: ProdutoService) {}
+    constructor(private readonly produtoService: ProdutoService) {}
 
     @Get()
     @HttpCode(HttpStatus.OK)
